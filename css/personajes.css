@@ -1,0 +1,212 @@
+/* Reseteo de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+
+}
+
+
+/* Estilos del encabezado */
+header {
+    padding-top: 1.5%;
+	padding-right: 9%;
+	padding-bottom: 4%;
+	padding-left: 7%;
+	display: flex;
+	justify-content: space-between;
+    background-color: #333;
+    height: 150px;
+}
+
+header .logo img {
+    width: 9.375rem; /* 150px */
+    justify-content: left;
+    margin-left: 4rem;
+}
+
+.logo{
+    position: relative; /* Permite mover el logo respecto a su posición normal */
+    left: -5%; /* Mueve el logo un 5% hacia la izquierda, ajusta según sea necesario */
+    max-width: 150px; /* Asegúrate de que el logo tenga un tamaño máximo para adaptarse en pantallas más pequeñas */
+
+}
+
+main{
+    min-height: 100vh;
+}
+
+/* Estilos generales del menú */
+nav{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 7%;
+    Font-size: larger;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative; /* Necesario para el submenú */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem; /* 18px */
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    background-color: #333;
+    display: block;
+}
+
+/* Hover para enlaces del menú principal */
+nav ul li a:hover {
+    background-color: #817e7e;
+    border-radius: 0.1875rem; /* 3px */
+}
+
+/* Submenú oculto por defecto */
+.dropdown-menu,
+.dropdown-submenu {
+    display: none; /* Oculto por defecto */
+    position: absolute; /* Asegúrate de que sea absoluto */
+    top: 100%; /* Colocarlo justo debajo del menú principal */
+    left: 0;
+    background-color: #333;
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    margin: 0;
+}
+
+/* Estilos para los elementos del submenú */
+.dropdown-menu li,
+.dropdown-submenu li {
+    display: block;
+    margin: 0; /* Sin margen para evitar desplazamiento */
+}
+
+.dropdown-menu li a,
+.dropdown-submenu li a {
+    color: #fff;
+    background-color: #444;
+    text-align: left;
+}
+
+/* Hover para enlaces del submenú */
+.dropdown-menu li a:hover, .dropdown-submenu li a:hover {
+    background-color: #817e7e;
+}
+
+/* Mostrar el submenú al pasar el cursor sobre el elemento padre */
+.dropdown:hover .dropdown-menu {
+    display: block; /* Muestra el menú desplegable */
+}
+
+/* Submenú de segundo nivel (Personajes y Temporadas) */
+.dropdown-submenu {
+    left: 100%; /* Aparecerá a la derecha del menú padre */
+    top: 0;
+}
+
+.dropdown-menu li:hover .dropdown-submenu {
+    display: block; /* Muestra el submenú */
+}
+
+
+main {
+    display: block;
+    background-color: #c7c2c2;
+    width: 100%;
+    height: 80%;
+}
+
+/* Sección del personaje */
+.personaje {
+    display: flex; /* Usa flexbox para colocar elementos uno al lado del otro */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: flex-start; /* Alinea los elementos al principio */
+    text-align: center; /* Centra el texto */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay espacio */
+    padding-top: 0;
+}
+
+h1{
+    justify-self: center;
+}
+
+/* Estilo del título */
+.nombre {
+    flex: 1 1 100%; /* Toma toda la fila */
+}
+
+.info-personaje {
+    text-align: left; /* Alinea el texto a la izquierda */
+    flex: 1; /* Permite que el div ocupe el espacio disponible */
+    max-width: 700px; /* Asegúrate de que tenga un ancho máximo */ /* Añade un poco de espacio alrededor */
+    padding-left: 5%;
+    align-items: center;
+}
+
+.info-personaje p {
+    font-size: 1.2rem;
+    color: #0e0d0d;
+    line-height: 1.8;
+    margin-bottom: 1.4rem; /* Espacio entre párrafos */
+}
+
+.imagen-personaje {
+    width: 15%; /* Tamaño de la imagen */
+    padding: 0.65rem;
+    margin-bottom: 0%;
+    display: flex; /* Flexbox para centrar el texto debajo de la imagen */
+    flex-direction: column; /* Coloca la imagen y el nombre en columna */
+    align-items: center; /* Centra horizontalmente */
+}
+
+.imagen-personaje img {
+    width: 100%; /* Mantiene el ancho completo del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 400px; /* Máximo ancho */
+    max-height: 300px; /* Máximo alto */
+    box-shadow: 0.3125rem 0.3125rem 0.9375rem rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+.imagen-personaje h2 {
+    background-color: rgb(2, 61, 2);
+    color: white;
+    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+    max-width: 400px; /* Máximo ancho */
+    max-height: 300px; 
+}
+
+.social-media img {
+    width: 1.875rem; /* 30px */
+    margin: 0 0.625rem; /* 10px */
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.25);
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
