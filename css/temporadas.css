@@ -1,5 +1,5 @@
 header {
-    background-color: #333;
+    background: linear-gradient(rgb(110, 108, 108), rgb(3, 56, 3));
     color: #fff;
     text-align: center;
 }
@@ -25,7 +25,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     padding: 10px 20px;
-    background-color: #333;
+    background: linear-gradient((3, 56, 3));
     display: block;
 }
 
@@ -133,7 +133,7 @@ main{
     background-color: rgba(255, 255, 255, .92);
     border-radius: 3px;
     min-height: 480px;
-    margin: 3rem;
+    margin: 8rem;
     padding: 3rem;
     position: relative;
 }
@@ -195,7 +195,7 @@ p {
 img.historia-img {
     display: block;
     max-width: 100%;
-    height: auto;
+    height: 100%;
     margin: 2rem auto;
     border: 5px solid #ccc;
 }
