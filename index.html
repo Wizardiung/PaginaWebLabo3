@@ -7,49 +7,58 @@
     <title>Breaking Bad - Página Principal</title>
     <link rel="stylesheet" href="css/estilos.css"> <!-- Puedes enlazar un archivo CSS externo para estilizar la página -->
 </head>
+
+<script>
+    function toggleMenu() {
+        document.querySelector('.menu').classList.toggle('active');
+    }
+</script>
+
 <body>
     <!-- Encabezado del sitio -->
     <header>
         <div class="logo">
-            <img src="imagenes/Breaking_Bad_logo.png" alt="Logo de Breaking Bad"> <!-- Puedes reemplazar la imagen del logo -->
+            <img src="imagenes/Breaking_Bad_logo.png" alt="Logo de Breaking Bad">
         </div>
         <nav>
-            <ul>
+            <div class="hamburger-menu" onclick="toggleMenu()">☰</div> <!-- Icono de menú hamburguesa -->
+            <ul class="menu">
                 <li class="dropdown">
                     <a href="#">Serie</a>
                     <ul class="dropdown-menu">
                         <li><a href="historia.html">Historia</a></li>
                         <li class="dropdown">
                             <a href="#">Personajes</a>
-                                <ul class="dropdown-submenu">
-                                    <li><a href="walter-white.html">Walter White</a></li>
-                                    <li><a href="jesse-pinkman.html">Jesse Pinkman</a></li>
-                                    <li><a href="mike-ehrmantraut.html">Mike Ehrmantraut</a></li>
-                                    <li><a href="saul-goodman.html">Saul Goodman</a></li>
-                                    <li><a href="gustavo-fring.html">Gustavo Fring</a></li>
-                                    <li><a href="hank-schrader.html">Hank Schrader</a></li>
-                                </ul>
+                            <ul class="dropdown-submenu">
+                                <li><a href="walter-white.html">Walter White</a></li>
+                                <li><a href="jesse-pinkman.html">Jesse Pinkman</a></li>
+                                <li><a href="mike-ehrmantraut.html">Mike Ehrmantraut</a></li>
+                                <li><a href="saul-goodman.html">Saul Goodman</a></li>
+                                <li><a href="gustavo-fring.html">Gustavo Fring</a></li>
+                                <li><a href="hank-schrader.html">Hank Schrader</a></li>
+                            </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#">Temporadas</a>
-                                <ul class="dropdown-submenu">
-                                    <li><a href="temporada1.html">Temporada 1</a></li>
-                                    <li><a href="temporada2.html">Temporada 2</a></li>
-                                    <li><a href="temporada3.html">Temporada 3</a></li>
-                                    <li><a href="temporada4.html">Temporada 4</a></li>
-                                    <li><a href="temporada5.html">Temporada 5</a></li>
-                                </ul>
+                            <ul class="dropdown-submenu">
+                                <li><a href="temporada1.html">Temporada 1</a></li>
+                                <li><a href="temporada2.html">Temporada 2</a></li>
+                                <li><a href="temporada3.html">Temporada 3</a></li>
+                                <li><a href="temporada4.html">Temporada 4</a></li>
+                                <li><a href="temporada5.html">Temporada 5</a></li>
+                            </ul>
                         </li>   
                     </ul>                       
                 </li>
-                
-                </li>    
                 <li><a href="#">Multimedia</a></li>
                 <li><a href="#">Prensa</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
+
+    
+    
 
     <!-- Sección principal -->
     <main>
@@ -61,7 +70,7 @@
             </div>
         </section>
 
-        <section id="about" class="about">
+        <section class="about">
             <div class="personaje">
                 <a href="walter-white.html">
                 <img src="imagenes/walter front (2).webp" alt="pj1">
@@ -74,7 +83,7 @@
             </div>
             <div class="personaje">
                 <a href="gustavo-fring.html">
-                <img src="imagenes/gusfring.jpg" alt="pj1">
+                <img src="imagenes/Gus_Fring_2002.webp" alt="pj1">
                 </a>
             </div>
             <div class="personaje">
