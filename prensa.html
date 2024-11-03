@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Historia completa de Breaking Bad">
+    <title>Historia de Breaking Bad</title>
+    <link rel="stylesheet" href="css/historia.css">
+</head>
+
+<button id="btnScrollTop" class="scroll-top-btn">↑</button>
+
+<script>
+    const btnScrollTop = document.getElementById("btnScrollTop");
+
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            btnScrollTop.style.display = "block";
+        } else {
+            btnScrollTop.style.display = "none";
+        }
+    };
+
+    btnScrollTop.onclick = function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+
+
+    function toggleMenu() {
+        const menu = document.getElementById("menu-celu");
+        menu.classList.toggle("show");
+    }
+
+</script>   
+
+<body>
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                <img src="imagenes/Breaking_Bad_logo.png" alt="Logo de Breaking Bad"> <!-- Puedes reemplazar la imagen del logo -->
+                </a>
+            </div>
+            <nav class="nav" id="nav">
+
+                <button id="hamburger-button" class="hamburger-menu" onclick="toggleMenu()">☰</button>
+                <ul class="menu-celu" id="menu-celu">
+                    <li class="dropdown-celu">
+                        <a href="#">Serie</a>
+                        <ul class="dropdown-menu-celu">
+                            <li><a href="historia.html">Historia</a></li>
+                            <li class="dropdown-celu">
+                                <a href="#">Personajes</a>
+                                <ul class="dropdown-submenu-celu">
+                                    <li><a href="walter-white.html">Walter White</a></li>
+                                    <li><a href="jesse-pinkman.html">Jesse Pinkman</a></li>
+                                    <li><a href="mike-ehrmantraut.html">Mike Ehrmantraut</a></li>
+                                    <li><a href="saul-goodman.html">Saul Goodman</a></li>
+                                    <li><a href="gustavo-fring.html">Gustavo Fring</a></li>
+                                    <li><a href="hank-schrader.html">Hank Schrader</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-celu">
+                                <a href="#">Temporadas</a>
+                                <ul class="dropdown-submenu-celu">
+                                    <li><a href="temporada1.html">Temporada 1</a></li>
+                                    <li><a href="temporada2.html">Temporada 2</a></li>
+                                    <li><a href="temporada3.html">Temporada 3</a></li>
+                                    <li><a href="temporada4.html">Temporada 4</a></li>
+                                    <li><a href="temporada5.html">Temporada 5</a></li>
+                                </ul>
+                            </li>   
+                        </ul>                       
+                    </li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                    <li><a href="prensa.html">Prensa</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+
+                <ul class="menu">
+                    <li class="dropdown">
+                        <a href="#">Serie</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="historia.html">Historia</a></li>
+                            <li class="dropdown">
+                                <a href="#">Personajes</a>
+                                <ul class="dropdown-submenu">
+                                    <li><a href="walter-white.html">Walter White</a></li>
+                                    <li><a href="jesse-pinkman.html">Jesse Pinkman</a></li>
+                                    <li><a href="mike-ehrmantraut.html">Mike Ehrmantraut</a></li>
+                                    <li><a href="saul-goodman.html">Saul Goodman</a></li>
+                                    <li><a href="gustavo-fring.html">Gustavo Fring</a></li>
+                                    <li><a href="hank-schrader.html">Hank Schrader</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Temporadas</a>
+                                <ul class="dropdown-submenu">
+                                    <li><a href="temporada1.html">Temporada 1</a></li>
+                                    <li><a href="temporada2.html">Temporada 2</a></li>
+                                    <li><a href="temporada3.html">Temporada 3</a></li>
+                                    <li><a href="temporada4.html">Temporada 4</a></li>
+                                    <li><a href="temporada5.html">Temporada 5</a></li>
+                                </ul>
+                            </li>   
+                        </ul>                       
+                    </li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                    <li><a href="prensa.html">Prensa</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+            <section>
+                <div class="Historia">
+                    <h1>Reconocimientos y Críticas de Breaking Bad</h1>
+                    <p> 
+                        <strong><a href="https://en.wikipedia.org/wiki/Breaking_Bad" target="_blank">Breaking Bad</a></strong> es una de las series más aclamadas de la televisión moderna, creada por <a href="https://en.wikipedia.org/wiki/Vince_Gilligan" target="_blank">Vince Gilligan</a> y emitida originalmente entre 2008 y 2013. Narra la transformación radical de <strong>Walter White</strong>, un apacible profesor de química en <a href="https://en.wikipedia.org/wiki/Albuquerque,_New_Mexico" target="_blank">Albuquerque, Nuevo México</a>, que, tras ser diagnosticado con cáncer de pulmón terminal, se adentra en el mundo del narcotráfico para asegurar el futuro económico de su familia. Lo que comienza como una elección desesperada pronto se convierte en una lucha de poder que cambia su vida y la de quienes lo rodean para siempre.
+                    </p>
+                                        
+                    <h2>Premios y Reconocimientos</h2>
+                    
+                    <p>
+                        A lo largo de sus cinco temporadas, <strong><a href="https://en.wikipedia.org/wiki/Breaking_Bad" target="_blank">Breaking Bad</a></strong> recibió numerosos <strong>premios</strong>, incluyendo <strong><a href="https://www.emmys.com/shows/breaking-bad" target="_blank">16 Premios Emmy</a></strong>. Además, su elenco y equipo de producción han sido galardonados en festivales como los <a href="https://www.goldenglobes.com/tv-show/breaking-bad" target="_blank">Globos de Oro</a> y los <a href="https://www.sagawards.org/" target="_blank">SAG Awards</a>. La serie sigue siendo un referente en la industria televisiva.
+                    </p>
+                    
+                    <div class="imagenes">
+                        <img src="imagenes/premiosbreaking.jpeg" alt="El Cast Principal de Breaking Bad y sus premios">
+                        <h3>
+                            El Cast Principal de Breaking Bad y sus premios
+                        </h3>
+                    </div>
+                    
+                    <p> 
+                        Además de las críticas, muchos medios destacan el <strong>realismo</strong> en el desarrollo de los personajes y el guion. Desde la primera temporada, la serie ha sido catalogada como un fenómeno que refleja de manera cruda y auténtica los dilemas morales y las consecuencias de las decisiones de sus protagonistas.
+                    </p>
+                    
+                    <div class="imagenes">
+                        <img src="imagenes/premiosbreaking2.jpeg" alt="Bryan Cranston y el equipo de producción de la serie">
+                        <h3>
+                            Bryan Cranston y el equipo de producción de la serie
+                        </h3>
+                    </div>
+                    
+                    <h2>Impacto Cultural</h2>
+                    
+                    <p> 
+                        <strong><a href="https://en.wikipedia.org/wiki/Breaking_Bad" target="_blank">Breaking Bad</a></strong> ha dejado una huella significativa en la cultura popular. Frases como <strong>"<a href="https://www.youtube.com/watch?v=O7RTm48B0-U" target="_blank">I am the one who knocks</a>"</strong> se han convertido en parte del léxico popular y han influido en otras series y películas. El <strong>impacto cultural</strong> de la serie se extiende a nivel mundial, siendo un referente en el <strong><a href="https://en.wikipedia.org/wiki/Crime_drama" target="_blank">género de drama criminal</a></strong>.
+                    </p>
+                    
+                    <div class="imagenes">
+                        <img src="imagenes/imnotindanger.jpeg" alt="I am the one who knocks">
+                        <h3>
+                            I am the one who knocks
+                        </h3>
+                    </div>
+                    
+                    <p> 
+                        La influencia de <strong><a href="https://en.wikipedia.org/wiki/Breaking_Bad" target="_blank">Breaking Bad</a></strong> va más allá de la televisión, inspirando parodias, referencias en otras obras, y hasta análisis académicos sobre la evolución de sus personajes. La serie se ha convertido en un ejemplo de cómo la ficción puede explorar temas complejos y conectarse profundamente con la audiencia.
+                    </p>
+                    
+                    <div class="imagenes">
+                        <img src="imagenes/breakingbadparodia.jpg" alt="Una parodia de Breaking Bad en Youtube">
+                        <h3>
+                            Una parodia de Breaking Bad en Youtube
+                        </h3>
+                    </div>
+                    
+                    <h2>Cobertura Mediática</h2>
+                    
+                    <p> 
+                        La serie <strong><a href="https://en.wikipedia.org/wiki/Breaking_Bad" target="_blank">Breaking Bad</a></strong> ha sido ampliamente reconocida en la <strong>prensa</strong> y ha recibido críticas tanto positivas como negativas. Desde su debut, ha aparecido en publicaciones como el <a href="https://www.nytimes.com/" target="_blank">New York Times</a>, <a href="https://www.rollingstone.com/" target="_blank">Rolling Stone</a>, y <a href="https://variety.com/" target="_blank">Variety</a>, donde se destaca su <strong>innovador enfoque narrativo</strong> y la <strong>intensidad de sus personajes</strong>.
+                    </p>
+                    
+                    <div class="imagenes">
+                        <img src="imagenes/aaronpaulrollingstones.jpg" alt="La portada de la revista Rolling Stones con Aaron Paul">
+                        <h3>
+                            La portada de la revista Rolling Stones con Aaron Paul
+                        </h3>
+                    </div>
+                    
+                    <p> 
+                        Además de las críticas, muchos medios destacan el <strong>realismo</strong> en el desarrollo de los personajes y el guion. Desde la primera temporada, la serie ha sido catalogada como un fenómeno que refleja de manera cruda y auténtica los dilemas morales y las consecuencias de las decisiones de sus protagonistas.
+                    </p>
+                    
+                    <div class="imagenes">
+                        <img src="imagenes/walterbocaabierta.jpg" alt="Walter sorprendido">
+                        <h3>Walter en estado de shock</h3>
+                    </div>
+                    
+                    <h2>Críticas Destacadas</h2>
+                    
+                    <p> 
+                        La serie ha sido elogiada por críticos de renombre como <a href="https://en.wikipedia.org/wiki/Roger_Ebert" target="_blank">Roger Ebert</a> y publicaciones como <a href="https://www.latimes.com/" target="_blank">Los Angeles Times</a> y <a href="https://www.theguardian.com/" target="_blank">The Guardian</a>, quienes destacaron su <strong>profundidad psicológica</strong> y la <strong>complejidad moral</strong> de los personajes. Estas críticas han contribuido a consolidar a <strong><a href="https://en.wikipedia.org/wiki/Breaking_Bad" target="_blank">Breaking Bad</a></strong> como una de las mejores series de televisión de todos los tiempos.
+                    </p>
+                    
+                    <div class="imagenes">
+                        <img src="imagenes/critica1.jpg" alt="Portada de video de critica a Breaking Bad">
+                        <h3>
+                            Portada de video de critica a Breaking Bad
+                        </h3>
+                    </div>
+                    
+                    <p> 
+                        En diversos análisis, los críticos han resaltado la transformación de <strong>Walter White</strong> como uno de los arcos narrativos más fascinantes y sombríos de la televisión. La serie ha sido llamada una "tragedia moderna" que refleja los oscuros aspectos de la condición humana, ganando respeto entre los analistas del medio.
+                    </p>
+                    
+                    <div class="imagenes">
+                        <img src="imagenes/walteroscuro.jpeg" alt="Walter White y un aura oscura">
+                        <h3>
+                            Walter White y un aura oscura
+                        </h3>
+                    </div>
+
+                </div>
+            </section>
+
+
+        </main>
+
+
+        
+
+        <footer>
+            <p>&copy; 2024 Breaking Bad Fan Page. Todos los derechos reservados.</p>
+            <div class="social-media">
+                <a href="#"><img src="imagenes/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="imagenes/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="imagenes/Instagram-Icon.png" alt="Instagram"></a>
+            </div>
+        </footer>
+</body>
+ 

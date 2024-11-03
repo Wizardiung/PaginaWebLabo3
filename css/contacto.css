@@ -8,14 +8,43 @@
 
 html{
     height: 100%;
+    
+}
+
+h1{
+    font-size: xx-large;
 }
 
 body {
     line-height: 1.6;
     background-color: black;
+    background-image: url('../imagenes/fondo-contacto.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-/* Encabezado */
+main{
+    text-align: center;
+    padding: 2rem;
+    padding-top: 2rem;
+    margin: 20rem;
+    background-color: rgba(202, 202, 202, 0.9);
+    border-radius: 5px;
+
+}
+
+.contact-form{
+    text-align: left;
+    width: 100%;
+}
+/* Emcabezado */
 header {
     background: linear-gradient(rgb(110, 108, 108), rgb(3, 56, 3));
     color: #fff;
@@ -145,134 +174,82 @@ nav ul li a:hover {
     display: block;
 }
 
-
-/* Sección principal */
-.hero {
-    background: url('imagenes/banner_principal.jpg') no-repeat center center/cover;
-    color: #fff;
+.contact-container {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    
-}
-
-.hero h1 {
-    font-size: 4rem;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-.hero .btn {
-    display: inline-block;
-    background-color: #ff9800;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.hero .btn:hover {
-    background-color: #e68900;
-}
-
-/* Sección "Sobre la Serie" */
-.about {
-    display: flex;
+    justify-content: space-between;
     align-items: center;
+    min-height: 650px; /* Establece una altura mínima adecuada */
+}
+
+.contact-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    max-width: 650px;
+    max-height: 650px;
     height: 100%;
     width: 100%;
 }
 
-.titulo{
-    padding-top: 4px;
-    background-color: #333;
+.image-celu{
+    display: none;
 }
 
-.titulo img{
-    max-width: 100%;
-}
-
-a{
+.contact-image img {
     max-width: 100%;
     max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Para mantener la proporción dentro del contenedor */
+    border-radius: 5px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
 }
 
 
-/* Sección de Personajes */
-.personaje {
-    width: 350px;
-    height: 100%;
-    background-color: black;
-    object-fit: cover;
+.contact-form label {
+    margin-top: 25px;
+    margin-bottom: 0px;
 }
 
-.personaje img{
-    width: 100%;
-    height: 100%;
-    max-height: 420px;
-    background-color: black;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.personaje img:hover{
-    transform: scale(1.05);
+button[type="submit"] {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgb(1, 63, 15);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.characters h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+button[type="submit"]:hover {
+    background-color: #478;
 }
 
-.character-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+.contact-form label img {
+    margin-bottom: 0; /* Espacio entre la imagen y el campo de entrada */
 }
 
-.character {
-    background-color: black;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
 
-.character img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    
-    
-}
-
-.character h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.character p {
-    font-size: 1rem;
-    color: #333;
-}
-
-/* Pie de página */
 footer {
     background-color: #000000;
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    position: relative;
 }
 
-footer p {
-    margin-bottom: 10px;
-}
 
 .social-media img {
     width: 30px;
@@ -285,9 +262,122 @@ footer p {
 }
 
 
+@media (max-width: 576px){
 
-@media (max-width: 576px) {
+    #menu-celu{
+        background-color: #333;
+        text-align: end;
+        position: absolute; /* Hace que el menú se superponga al contenido */
+        right: 0;
+        z-index: 10; /* Asegura que el menú esté por encima de otros elementos */
+        width: 150px;
+    }
 
+    #menu-celu .dropdown-menu-celu, #menu-celu .dropdown-submenu-celu {
+        position: relative; /* Los submenús se despliegan hacia abajo */
+        display: none; /* Ocultos inicialmente */
+        margin-top: 5px; /* Espacio opcional entre submenús */
+        background-color: #f0f0f0; /* Color opcional para submenús */
+    }
+
+    #menu-celu li:hover > .dropdown-menu-celu, #menu-celu li:hover > .dropdown-submenu-celu {
+    display: block; /* Muestra el submenú cuando se hace hover */
+    }
+
+    #menu-celu .dropdown-menu-celu, #menu-celu .dropdown-submenu-celu {
+    position: relative; /* Despliegue hacia abajo */
+    display: none;
+    margin-top: 5px;
+    background-color: #f0f0f0;
+    }
+
+/* Ajuste para el último submenú para que se despliegue hacia la izquierda */
+    #menu-celu .dropdown-submenu-celu {
+    position: absolute; /* Posiciona el submenú dentro del contenedor */
+    top: 0;
+    left: auto; /* Desactiva cualquier valor de "left" */
+    right: 100%; /* Se despliega hacia la izquierda */
+    }
+
+    .menu{
+        display: none;
+    }
+    
+    .hamburger-menu {
+        display: block;
+        height: 40px;
+        width: 40px;
+        margin: 20px;
+        margin-bottom: 0;
+        background: linear-gradient(rgb(110, 108, 108), rgb(3, 56, 3));
+    }
+
+    .show {
+        display: block;
+    }
+
+
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .logo img {
+        width: 120px;
+        padding: 6%;
+    }
+
+    
+
+    .contact-image{
+        display: none;
+    }
+
+    .image-celu, .image-celu img{
+        display: block;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    nav .menu {
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    nav ul li {
+        margin: 0;
+        width: 100%;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    main{
+        margin: 1rem;
+        padding: 1rem;
+        min-height: 100%;
+    }
+
+    p{
+        font-size: large;
+    }
+
+    footer{
+        bottom: 0;
+    }
+
+
+}
+
+
+@media (max-width: 480px){
 
     #menu-celu{
         background-color: #333;
@@ -341,173 +431,8 @@ footer p {
     .show {
         display: block;
     }
+
     
-    header{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    header .logo img {
-        width: 120px;
-        padding: 6%;
-    }
-
-    .menu{
-        display: none;
-    }
-    
-
-    .show {
-        display: block;
-    }
-    
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .hero .btn {
-        padding: 8px 16px;
-        font-size: 1rem;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .personaje a {
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    .personaje img {
-        padding-bottom: 1.3rem;
-        padding-left: 1.3rem;
-        padding-right: 1.3rem;
-        max-width: 100%;
-    }
-
-    .character-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-    }
-
-    .about {
-        flex-direction: column;
-        padding: 20px;
-        height: 100%;
-    }
-
-    .personaje{
-        width: 500px;
-    }
-
-    footer {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    nav .menu {
-        flex-direction: column;
-        background-color: #333;
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-    }
-
-    nav ul li {
-        margin: 0;
-        width: 100%;
-    }
-
-    nav ul li a {
-        padding: 15px;
-        text-align: center;
-        width: 100%;
-    }
-
-    /* Submenús en dispositivos móviles */
-    .dropdown-menu, .dropdown-submenu {
-        position: static;
-    }
-
-    .menu.active {
-        display: flex;
-    }
-}
-
-@media (max-width: 480px) {
-
-    #menu-celu{
-        background-color: #333;
-        text-align: end;
-        position: absolute; /* Hace que el menú se superponga al contenido */
-        right: 0;
-        z-index: 10; /* Asegura que el menú esté por encima de otros elementos */
-    }
-
-    #menu-celu .dropdown-menu-celu, #menu-celu .dropdown-submenu-celu {
-        position: relative; /* Los submenús se despliegan hacia abajo */
-        display: none; /* Ocultos inicialmente */
-        margin-top: 5px; /* Espacio opcional entre submenús */
-        background-color: #f0f0f0; /* Color opcional para submenús */
-    }
-
-    #menu-celu li:hover > .dropdown-menu-celu, #menu-celu li:hover > .dropdown-submenu-celu {
-    display: block; /* Muestra el submenú cuando se hace hover */
-    }
-
-    #menu-celu .dropdown-menu-celu, #menu-celu .dropdown-submenu-celu {
-    position: relative; /* Despliegue hacia abajo */
-    display: none;
-    margin-top: 5px;
-    background-color: #f0f0f0;
-    }
-
-/* Ajuste para el último submenú para que se despliegue hacia la izquierda */
-    #menu-celu .dropdown-submenu-celu {
-    position: absolute; /* Posiciona el submenú dentro del contenedor */
-    top: 0;
-    left: auto; /* Desactiva cualquier valor de "left" */
-    right: 100%; /* Se despliega hacia la izquierda */
-    }
-
-
-    .menu{
-        display: none;
-    }
-    
-    .hamburger-menu {
-        display: block;
-        height: 40px;
-        width: 40px;
-        margin: 20px;
-        margin-bottom: 0;
-        background: linear-gradient(rgb(110, 108, 108), rgb(3, 56, 3));
-    }
-
-    .show {
-        display: block;
-    }
-
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 0.9rem;
-    }
-
-    .hero .btn {
-        padding: 6px 12px;
-        font-size: 0.9rem;
-    }
 
     header{
         display: flex;
@@ -519,54 +444,28 @@ footer p {
         padding: 6%;
     }
 
-    .character-grid {
-        grid-template-columns: 1fr;
-        gap: 10px;
+    main{
+        margin: 1rem;
+        padding: 1rem;
+        min-height: 100%;
     }
 
-    .about {
-        flex-direction: column;
-        background-color: black;
-        height: 100%;
+    .contact-image{
+        display: none;
     }
 
-    .personaje{
-        width: 500px;
+    .image-celu, .image-celu img{
+        display: block;
+        max-width: 100%;
+        border-radius: 10px;
     }
 
-    footer {
-        padding-left: 5px;
-        padding-right: 5px;
+    p{
+        font-size: large;
     }
 
-
-    nav .menu {
-
-        flex-direction: column;
-        background-color: #333;
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-    }
-
-    nav ul li {
-        margin: 0;
-        width: 100%;
-    }
-
-    nav ul li a {
-        padding: 15px;
-        text-align: center;
-        width: 100%;
-    }
-
-    /* Submenús en dispositivos móviles */
-    .dropdown-menu, .dropdown-submenu {
-        position: static;
-    }
-
-    .menu.active {
-        display: flex;
+    footer{
+        bottom: 0;
     }
 }
+
