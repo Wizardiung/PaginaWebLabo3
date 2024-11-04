@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="https://static.wikia.nocookie.net/breakingbad/images/4/4a/Site-favicon.ico/revision/latest?cb=20210524140906" type="image/x-icon">
     <title>Hank Schrader</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/personajes.css">
 </head>
+
+<script>
+    
+    function toggleMenu() {
+        const menu = document.getElementById("menu-celu");
+        menu.classList.toggle("show");
+    }
+
+</script>  
 
 <body>
     <header>
@@ -15,21 +26,56 @@
             <img src="imagenes/Breaking_Bad_logo.png" alt="Logo de Breaking Bad"> 
             </a>
         </div>
-        <nav>
-            <ul>
+        <nav class="nav" id="nav">
+            <button id="hamburger-button" class="hamburger-menu" onclick="toggleMenu()">☰</button>
+            <ul class="menu-celu" id="menu-celu">
+                <li class="dropdown-celu">
+                    <a href="#">Serie</a>
+                    <ul class="dropdown-menu-celu">
+                        <li><a href="historia.html">Historia</a></li>
+                        <li class="dropdown-celu">
+                            <a href="#">Personajes</a>
+                            <ul class="dropdown-submenu-celu">
+                                <li><a href="walter-white.html">Walter White</a></li>
+                                <li><a href="jesse-pinkman.html">Jesse Pinkman</a></li>
+                                <li><a href="mike-ehrmantraut.html">Mike Ehrmantraut</a></li>
+                                <li><a href="saul-goodman.html">Saul Goodman</a></li>
+                                <li><a href="gustavo-fring.html">Gustavo Fring</a></li>
+                                <li><a href="hank-schrader.html">Hank Schrader</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-celu">
+                            <a href="#">Temporadas</a>
+                            <ul class="dropdown-submenu-celu">
+                                <li><a href="temporada1.html">Temporada 1</a></li>
+                                <li><a href="temporada2.html">Temporada 2</a></li>
+                                <li><a href="temporada3.html">Temporada 3</a></li>
+                                <li><a href="temporada4.html">Temporada 4</a></li>
+                                <li><a href="temporada5.html">Temporada 5</a></li>
+                            </ul>
+                        </li>   
+                    </ul>                       
+                </li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="prensa.html">Prensa</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+            <ul class="menu">
                 <li class="dropdown">
                     <a href="#">Serie</a>
                     <ul class="dropdown-menu">
                         <li><a href="historia.html">Historia</a></li>
                         <li class="dropdown">
                             <a href="#">Personajes</a>
-                                <ul class="dropdown-submenu">
-                                    <li><a href="walter-white.html">Walter White</a></li>
-                                    <li><a href="jesse-pinkman.html">Jesse Pinkman</a></li>
-                                    <li><a href="mike-ehrmantraut.html">Mike Ehrmantraut</a></li>
-                                    <li><a href="saul-goodman.html">Saul Goodman</a></li>
-                                    <li><a href="gustavo-fring.html">Gustavo Fring</a></li>
-                                </ul>
+                            <ul class="dropdown-submenu">
+                                <li><a href="walter-white.html">Walter White</a></li>
+                                <li><a href="jesse-pinkman.html">Jesse Pinkman</a></li>
+                                <li><a href="mike-ehrmantraut.html">Mike Ehrmantraut</a></li>
+                                <li><a href="saul-goodman.html">Saul Goodman</a></li>
+                                <li><a href="gustavo-fring.html">Gustavo Fring</a></li>
+                                <li><a href="hank-schrader.html">Hank Schrader</a></li>
+                            </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#">Temporadas</a>
@@ -43,8 +89,6 @@
                         </li>   
                     </ul>                       
                 </li>
-                
-                </li>    
                 <li><a href="multimedia.html">Multimedia</a></li>
                 <li><a href="prensa.html">Prensa</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -60,25 +104,55 @@
             </div>
             <div class="info-personaje">
                 <p>
-                    Henry R. "Hank" Schrader es el marido de Marie Schrader (hermana de Skyler White) y agente especial a cargo de las oficinas de la DEA en Albuquerque. Un hombre enérgico y bullicioso, Hank es además cuñado de Walter White.
-
+                    Henry R. "Hank" Schrader es el <strong>marido</strong> de <strong>Marie Schrader</strong> (hermana de <strong>Skyler White</strong>) y <strong>agente especial</strong> a cargo de las oficinas de la <strong>DEA</strong> en <strong>Albuquerque</strong>. Un <strong>hombre enérgico</strong> y <strong>bullicioso</strong>, Hank es además <strong>cuñado</strong> de <strong>Walter White</strong>.
                 </p>
                 <p>
-                    A pesar de que es un agente extremadamente competente y que realmente se preocupa por Marie, Walter, Skyler y Walter Jr., su estilo a menudo acaba aislándole del peligro al que se expone diariamente.
-
+                    A pesar de que es un <strong>agente extremadamente competente</strong> y que realmente se preocupa por <strong>Marie</strong>, <strong>Walter</strong>, <strong>Skyler</strong> y <strong>Walter Jr.</strong>, su <strong>estilo</strong> a menudo acaba <strong>aislándole</strong> del <strong>peligro</strong> al que se expone diariamente.
                 </p>
                 <p>
-                    La investigación de Hank acerca del traficante de metanfetamina conocido como "Heisenberg" — fuente de un cristal azul misterioso y de alta calidad — acaba llevándole a descubrir el imperio de drogas de Gus y a acabar con Gustavo Fring. No obstante, Hank desconoce que "Heisenberg" es el alter-ego de su propio cuñado, Walter.
-
+                    La <strong>investigación</strong> de Hank acerca del <strong>traficante de metanfetamina</strong> conocido como "<strong>Heisenberg</strong>" — fuente de un <strong>cristal azul</strong> misterioso y de <strong>alta calidad</strong> — acaba llevándole a descubrir el <strong>imperio de drogas</strong> de <strong>Gus</strong> y a acabar con <strong>Gustavo Fring</strong>. No obstante, Hank desconoce que "<strong>Heisenberg</strong>" es el <strong>alter-ego</strong> de su propio <strong>cuñado</strong>, <strong>Walter</strong>.
                 </p>
                 <p>
-                    Cuando relaciona a Walter con Gale Boetticher, conocido proveedor de cristal azul para el negocio de Fring, Hank descubre el secreto de Walt y a partir de entonces dedica todos sus esfuerzos en llevarle a la justicia de una vez por todas. Para ello, incluso llega a colaborar con Jesse Pinkman (ex-compañero de Walt en las actividades ilegales) pese al turbulento historial que tiene con él.
+                    Cuando relaciona a <strong>Walter</strong> con <strong>Gale Boetticher</strong>, conocido proveedor de <strong>cristal azul</strong> para el negocio de <strong>Fring</strong>, Hank descubre el <strong>secreto</strong> de <strong>Walt</strong> y a partir de entonces dedica todos sus esfuerzos en llevarle a la <strong>justicia</strong> de una vez por todas. Para ello, incluso llega a colaborar con <strong>Jesse Pinkman</strong> (ex-compañero de <strong>Walt</strong> en las <strong>actividades ilegales</strong>) pese al <strong>turbulento historial</strong> que tiene con él.
                 </p>
+                
 
             </div>
-            <div class="imagen-personaje">
-                <img src="imagenes/hankschrader.jpg" alt="Imagen de Walter White">
-                <h2>Hank Schrader</h2>
+            <div class="container mt-5 carrusel-personaje">
+                <div id="carruselSaul" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagenes/hank1.jpg" class="d-block w-100" alt="Imagen de Hank 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                
+                            </div>
+                            <h2>Hank Schrader</h2>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/hank2.webp" class="d-block w-100" alt="Imagen de Hank 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                
+                            </div>
+                            <h2>Hank Schrader</h2>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/hank3.webp" class="d-block w-100" alt="Imagen de Hank 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                
+                            </div>
+                            <h2>Hank Schrader</h2>
+                        </div>
+                        <!-- Agrega más imágenes según sea necesario -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carruselSaul" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carruselSaul" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
             </div>
         </div>
     </main>
@@ -87,10 +161,11 @@
     <footer>
         <p>&copy; 2024 Breaking Bad Fan Page</p>
         <div class="social-media">
-            <a href="#"><img src="imagenes/facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="imagenes/twitter-icon.png" alt="Twitter"></a>
-            <a href="#"><img src="imagenes/Instagram-Icon.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/BreakingBad/?locale=es_LA"><img src="imagenes/facebook-icon.png" alt="Facebook"></a>
+            <a href="https://x.com/breakingbad?lang=es"><img src="imagenes/twitter-icon.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/breakingbad/"><img src="imagenes/Instagram-Icon.png" alt="Instagram"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

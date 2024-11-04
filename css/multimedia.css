@@ -1,4 +1,3 @@
-/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -6,31 +5,26 @@
     font-family: Arial, sans-serif;
 }
 
-html{
-    height: 100%;
-}
-
-body {
-    line-height: 1.6;
-    background-color: black;
-}
-
-/* Encabezado */
 header {
     background: linear-gradient(rgb(110, 108, 108), rgb(3, 56, 3));
     color: #fff;
     text-align: center;
 }
 
+
 header .logo img {
     width: 150px;
 }
 
-/* Estilos generales del menú */
-.hamburger-menu{
-    display: none;
+body{
+    background-color: rgba(26, 22, 25, 0.933);
 }
 
+main{
+    min-height: 100vh;
+}
+
+/* Estilos generales del menú */
 nav ul {
     list-style: none;
     padding: 0;
@@ -98,8 +92,6 @@ nav ul li a:hover {
     display: block;
 }
 
-/* MENU OCULTO */
-
 .menu-celu{
     display: none;
 }
@@ -145,94 +137,52 @@ nav ul li a:hover {
     display: block;
 }
 
-
-/* Sección principal */
-.hero {
-    background: url('imagenes/banner_principal.jpg') no-repeat center center/cover;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    
-}
-
-.hero h1 {
-    font-size: 4rem;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-.hero .btn {
-    display: inline-block;
-    background-color: #ff9800;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.hero .btn:hover {
-    background-color: #e68900;
-}
-
-/* Sección "Sobre la Serie" */
-.about {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+.hamburger-menu{
+    display: none;
 }
 
 .titulo{
-    padding-top: 4px;
-    background-color: #333;
+    padding-top: 15px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .titulo img{
     max-width: 100%;
 }
 
-a{
-    max-width: 100%;
-    max-height: 100%;
-}
-
-
-/* Sección de Personajes */
-.personaje {
-    width: 350px;
-    height: 100%;
-    background-color: black;
-    object-fit: cover;
-}
-
-.personaje img{
-    width: 100%;
-    height: 100%;
-    max-height: 420px;
-    background-color: black;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.personaje img:hover{
-    transform: scale(1.05);
-}
-
-
-
-
 h1{
     display: none;
 }
 
-/* Pie de página */
+.contenedor{
+    width: 100%;
+    min-height: 100vh;
+    justify-content:center;
+    padding: 3px 2%;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.galeria img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.25s ease;
+}
+
+.galeria img:hover{
+    transform: scale(1.085)
+}
+
+
 footer {
     background-color: #000000;
     color: #fff;
@@ -242,6 +192,7 @@ footer {
 
 footer p {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .social-media img {
@@ -255,9 +206,7 @@ footer p {
 }
 
 
-
-@media (max-width: 576px) {
-
+@media (max-width: 576px){
 
     #menu-celu{
         background-color: #333;
@@ -311,7 +260,8 @@ footer p {
     .show {
         display: block;
     }
-    
+
+
     header{
         display: flex;
         justify-content: space-between;
@@ -320,65 +270,6 @@ footer p {
     header .logo img {
         width: 120px;
         padding: 6%;
-    }
-
-    .menu{
-        display: none;
-    }
-    
-
-    .show {
-        display: block;
-    }
-    
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .hero .btn {
-        padding: 8px 16px;
-        font-size: 1rem;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .personaje a {
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    .personaje img {
-        padding-bottom: 1.3rem;
-        padding-left: 1.3rem;
-        padding-right: 1.3rem;
-        max-width: 100%;
-    }
-
-    .character-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-    }
-
-    .about {
-        flex-direction: column;
-        padding: 20px;
-        height: 100%;
-    }
-
-    .personaje{
-        width: 500px;
-    }
-
-    footer {
-        padding-left: 5px;
-        padding-right: 5px;
     }
 
     nav .menu {
@@ -401,17 +292,9 @@ footer p {
         width: 100%;
     }
 
-    /* Submenús en dispositivos móviles */
-    .dropdown-menu, .dropdown-submenu {
-        position: static;
-    }
-
-    .menu.active {
-        display: flex;
-    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px){
 
     #menu-celu{
         background-color: #333;
@@ -419,6 +302,7 @@ footer p {
         position: absolute; /* Hace que el menú se superponga al contenido */
         right: 0;
         z-index: 10; /* Asegura que el menú esté por encima de otros elementos */
+        width: 150px;
     }
 
     #menu-celu .dropdown-menu-celu, #menu-celu .dropdown-submenu-celu {
@@ -465,20 +349,6 @@ footer p {
         display: block;
     }
 
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 0.9rem;
-    }
-
-    .hero .btn {
-        padding: 6px 12px;
-        font-size: 0.9rem;
-    }
-
     header{
         display: flex;
         justify-content: space-between;
@@ -489,54 +359,4 @@ footer p {
         padding: 6%;
     }
 
-    .character-grid {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-
-    .about {
-        flex-direction: column;
-        background-color: black;
-        height: 100%;
-    }
-
-    .personaje{
-        width: 500px;
-    }
-
-    footer {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-
-    nav .menu {
-
-        flex-direction: column;
-        background-color: #333;
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-    }
-
-    nav ul li {
-        margin: 0;
-        width: 100%;
-    }
-
-    nav ul li a {
-        padding: 15px;
-        text-align: center;
-        width: 100%;
-    }
-
-    /* Submenús en dispositivos móviles */
-    .dropdown-menu, .dropdown-submenu {
-        position: static;
-    }
-
-    .menu.active {
-        display: flex;
-    }
 }

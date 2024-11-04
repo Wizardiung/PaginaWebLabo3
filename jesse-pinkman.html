@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="https://static.wikia.nocookie.net/breakingbad/images/4/4a/Site-favicon.ico/revision/latest?cb=20210524140906" type="image/x-icon">
     <title>Jesse Pinkman</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/personajes.css">
 </head>
+
+<script>
+    
+    function toggleMenu() {
+        const menu = document.getElementById("menu-celu");
+        menu.classList.toggle("show");
+    }
+
+</script>  
 
 <body>
     <header>
@@ -15,21 +26,56 @@
             <img src="imagenes/Breaking_Bad_logo.png" alt="Logo de Breaking Bad"> 
             </a>
         </div>
-        <nav>
-            <ul>
+        <nav class="nav" id="nav">
+            <button id="hamburger-button" class="hamburger-menu" onclick="toggleMenu()">☰</button>
+            <ul class="menu-celu" id="menu-celu">
+                <li class="dropdown-celu">
+                    <a href="#">Serie</a>
+                    <ul class="dropdown-menu-celu">
+                        <li><a href="historia.html">Historia</a></li>
+                        <li class="dropdown-celu">
+                            <a href="#">Personajes</a>
+                            <ul class="dropdown-submenu-celu">
+                                <li><a href="walter-white.html">Walter White</a></li>
+                                <li><a href="jesse-pinkman.html">Jesse Pinkman</a></li>
+                                <li><a href="mike-ehrmantraut.html">Mike Ehrmantraut</a></li>
+                                <li><a href="saul-goodman.html">Saul Goodman</a></li>
+                                <li><a href="gustavo-fring.html">Gustavo Fring</a></li>
+                                <li><a href="hank-schrader.html">Hank Schrader</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-celu">
+                            <a href="#">Temporadas</a>
+                            <ul class="dropdown-submenu-celu">
+                                <li><a href="temporada1.html">Temporada 1</a></li>
+                                <li><a href="temporada2.html">Temporada 2</a></li>
+                                <li><a href="temporada3.html">Temporada 3</a></li>
+                                <li><a href="temporada4.html">Temporada 4</a></li>
+                                <li><a href="temporada5.html">Temporada 5</a></li>
+                            </ul>
+                        </li>   
+                    </ul>                       
+                </li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="prensa.html">Prensa</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+            <ul class="menu">
                 <li class="dropdown">
                     <a href="#">Serie</a>
                     <ul class="dropdown-menu">
                         <li><a href="historia.html">Historia</a></li>
                         <li class="dropdown">
                             <a href="#">Personajes</a>
-                                <ul class="dropdown-submenu">
-                                    <li><a href="walter-white.html">Walter White</a></li>
-                                    <li><a href="mike-ehrmantraut.html">Mike Ehrmantraut</a></li>
-                                    <li><a href="saul-goodman.html">Saul Goodman</a></li>
-                                    <li><a href="gustavo-fring.html">Gustavo Fring</a></li>
-                                    <li><a href="hank-schrader.html">Hank Schrader</a></li>
-                                </ul>
+                            <ul class="dropdown-submenu">
+                                <li><a href="walter-white.html">Walter White</a></li>
+                                <li><a href="jesse-pinkman.html">Jesse Pinkman</a></li>
+                                <li><a href="mike-ehrmantraut.html">Mike Ehrmantraut</a></li>
+                                <li><a href="saul-goodman.html">Saul Goodman</a></li>
+                                <li><a href="gustavo-fring.html">Gustavo Fring</a></li>
+                                <li><a href="hank-schrader.html">Hank Schrader</a></li>
+                            </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#">Temporadas</a>
@@ -43,8 +89,6 @@
                         </li>   
                     </ul>                       
                 </li>
-                
-                </li>    
                 <li><a href="multimedia.html">Multimedia</a></li>
                 <li><a href="prensa.html">Prensa</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -60,22 +104,58 @@
             </div>
             <div class="info-personaje">
                 <p>
-                    Jesse Bruce Pinkman es el compañero de Walter White en el tráfico de metanfetamina.
-                    En el instituto, Jesse era un consumidor, fabricante y traficante de poca monta de metanfetamina.
-                    Era un estudiante que prestaba poca atención a las clases de química de su profesor, el propio Walter. 
-                    Años después, Jesse se dedica al tráfico de droga con el seudónimo "Cap'n Cook" y añade chile en polvo a su producto para caracterizarlo.
+                    Jesse Bruce Pinkman es el <strong>compañero</strong> de <strong>Walter White</strong> en el <strong>tráfico de metanfetamina</strong>.
+                    En el instituto, Jesse era un <strong>consumidor</strong>, <strong>fabricante</strong> y <strong>traficante</strong> de poca monta de metanfetamina.
+                    Era un <strong>estudiante</strong> que prestaba poca atención a las <strong>clases de química</strong> de su <strong>profesor</strong>, el propio Walter.
+                    Años después, Jesse se dedica al <strong>tráfico de droga</strong> con el seudónimo <strong>"Cap'n Cook"</strong> y añade <strong>chile en polvo</strong> a su producto para caracterizarlo.
                 </p>
                 <p>
-                    Al buscar a Jesse para que trabajen juntos, Walter insiste en hacer un producto más puro, dejando de utilizar el chile en polvo y enseñando a Jesse a cocinar un mejor producto. 
-                    Continuamente Walter trata a Jesse como un hijo problemático que a menudo necesita que le corrijan.
-                    A pesar de la fricción entre ambos,
-                    él y Walt tienen una profunda lealtad el uno hacia el otro. 
-                    La propia familia de Jesse le echó de casa por sus problemas con las drogas.
+                    Al buscar a Jesse para que trabajen juntos, Walter insiste en hacer un producto más <strong>puro</strong>, dejando de utilizar el chile en polvo y enseñando a Jesse a <strong>cocinar</strong> un mejor producto.
+                    Continuamente Walter trata a Jesse como un <strong>hijo problemático</strong> que a menudo necesita que le corrijan.
+                    A pesar de la <strong>fricción</strong> entre ambos,
+                    él y Walt tienen una <strong>profunda lealtad</strong> el uno hacia el otro.
+                    La propia <strong>familia</strong> de Jesse le echó de casa por sus <strong>problemas con las drogas</strong>.
                 </p>
+                <p>
+                    Jesse lucha constantemente con su <strong>conciencia</strong> y el <strong>peso moral</strong> de sus acciones en el negocio de la droga. A pesar de su <strong>comportamiento autodestructivo</strong> y su dependencia de las drogas, Jesse demuestra ser un hombre con un <strong>corazón compasivo</strong>. Desarrolla un <strong>profundo sentido de culpa</strong> por las personas a las que su producto y sus acciones afectan, lo que lleva a un creciente <strong>conflicto interno</strong> entre su lealtad hacia Walter y su deseo de salir de la vida criminal.
+                </p>
+                
             </div>
-            <div class="imagen-personaje">
-                <img src="imagenes/Jesse_Pinkman_2004.webp" alt="Imagen de Jesse Pinkman">
-                <h2>Jesse Pinkman</h2>
+            <div class="container mt-5 carrusel-personaje">
+                <div id="carruselSaul" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagenes/jesse1.webp" class="d-block w-100" alt="Imagen de Jesse 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                
+                            </div>
+                            <h2>Jesse Pinkman</h2>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/jesse2.webp" class="d-block w-100" alt="Imagen de Jesse 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                
+                            </div>
+                            <h2>Jesse Pinkman</h2>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/jesse3.webp" class="d-block w-100" alt="Imagen de Jesse 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                
+                            </div>
+                            <h2>Jesse Pinkman</h2>
+                        </div>
+                        <!-- Agrega más imágenes según sea necesario -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carruselSaul" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carruselSaul" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
             </div>
         </div>
     </main>
@@ -84,10 +164,11 @@
     <footer>
         <p>&copy; 2024 Breaking Bad Fan Page</p>
         <div class="social-media">
-            <a href="#"><img src="imagenes/facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="imagenes/twitter-icon.png" alt="Twitter"></a>
-            <a href="#"><img src="imagenes/Instagram-Icon.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/BreakingBad/?locale=es_LA"><img src="imagenes/facebook-icon.png" alt="Facebook"></a>
+            <a href="https://x.com/breakingbad?lang=es"><img src="imagenes/twitter-icon.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/breakingbad/"><img src="imagenes/Instagram-Icon.png" alt="Instagram"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

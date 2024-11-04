@@ -12,50 +12,31 @@ body {
     color: #333;
     line-height: 1.6;
     min-height: 100vh;
-
 }
 
 
 /* Estilos del encabezado */
 header {
-    padding-top: 1.5%;
-	padding-right: 9%;
-	padding-bottom: 4%;
-	padding-left: 7%;
-	display: flex;
-	justify-content: space-between;
-    background-color: #333;
-    height: 150px;
+    background: linear-gradient(rgb(110, 108, 108), rgb(3, 56, 3));
+    color: #fff;
+    text-align: center;
 }
+
 
 header .logo img {
-    width: 9.375rem; /* 150px */
-    justify-content: left;
-    margin-left: 4rem;
+    width: 150px;
 }
 
-.logo{
-    position: relative; /* Permite mover el logo respecto a su posición normal */
-    left: -5%; /* Mueve el logo un 5% hacia la izquierda, ajusta según sea necesario */
-    max-width: 150px; /* Asegúrate de que el logo tenga un tamaño máximo para adaptarse en pantallas más pequeñas */
-
-}
 
 main{
     min-height: 100vh;
 }
 
 /* Estilos generales del menú */
-nav{
-    display: block;
-    unicode-bidi: isolate;
-}
-
 nav ul {
     list-style: none;
     padding: 0;
-    margin-top: 7%;
-    Font-size: larger;
+    margin: 0;
 }
 
 nav ul li {
@@ -67,52 +48,46 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.5rem; /* 18px */
-    padding: 0.625rem 1.25rem; /* 10px 20px */
-    background-color: #333;
+    font-size: 18px;
+    padding: 10px 20px;
+    background: linear-gradient((3, 56, 3));
     display: block;
 }
 
-/* Hover para enlaces del menú principal */
 nav ul li a:hover {
     background-color: #817e7e;
-    border-radius: 0.1875rem; /* 3px */
+    border-radius: 3px;
 }
 
 /* Submenú oculto por defecto */
-.dropdown-menu,
-.dropdown-submenu {
-    display: none; /* Oculto por defecto */
-    position: absolute; /* Asegúrate de que sea absoluto */
+.dropdown-menu, .dropdown-submenu {
+    display: none;
+    position: absolute;
     top: 100%; /* Colocarlo justo debajo del menú principal */
     left: 0;
     background-color: #333;
-    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    z-index: 1000;
+}
+
+.dropdown-menu li, .dropdown-submenu li {
+    display: block;
     margin: 0;
 }
 
-/* Estilos para los elementos del submenú */
-.dropdown-menu li,
-.dropdown-submenu li {
-    display: block;
-    margin: 0; /* Sin margen para evitar desplazamiento */
-}
-
-.dropdown-menu li a,
-.dropdown-submenu li a {
+.dropdown-menu li a, .dropdown-submenu li a {
+    
     color: #fff;
     background-color: #444;
     text-align: left;
 }
 
-/* Hover para enlaces del submenú */
 .dropdown-menu li a:hover, .dropdown-submenu li a:hover {
-    background-color: #817e7e;
+    background-color: #817e7e;;
 }
 
 /* Mostrar el submenú al pasar el cursor sobre el elemento padre */
 .dropdown:hover .dropdown-menu {
-    display: block; /* Muestra el menú desplegable */
+    display: block;
 }
 
 /* Submenú de segundo nivel (Personajes y Temporadas) */
@@ -122,7 +97,56 @@ nav ul li a:hover {
 }
 
 .dropdown-menu li:hover .dropdown-submenu {
-    display: block; /* Muestra el submenú */
+    display: block;
+}
+
+.menu-celu{
+    display: none;
+}
+
+/* Submenú oculto por defecto */
+.dropdown-menu-celu, .dropdown-submenu-celu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Colocarlo justo debajo del menú principal */
+    left: 0;
+    background-color: #333;
+    z-index: 1000;
+}
+
+.dropdown-menu-celu li, .dropdown-submenu-celu li {
+    display: block;
+    margin: 0;
+}
+
+.dropdown-menu-celu li a, .dropdown-submenu-celu li a {
+    
+    color: #fff;
+    background-color: #444;
+    text-align: left;
+}
+
+.dropdown-menu-celu li a:hover, .dropdown-submenu-celu li a:hover {
+    background-color: #817e7e;;
+}
+
+/* Mostrar el submenú al pasar el cursor sobre el elemento padre */
+.dropdown-celu:hover .dropdown-menu-celu {
+    display: block;
+}
+
+/* Submenú de segundo nivel (Personajes y Temporadas) */
+.dropdown-submenu-celu {
+    left: 100%; /* Aparecerá a la derecha del menú padre */
+    top: 0;
+}
+
+.dropdown-menu-celu li:hover .dropdown-submenu-celu {
+    display: block;
+}
+
+.hamburger-menu{
+    display: none;
 }
 
 
@@ -184,7 +208,35 @@ h1{
     box-shadow: 0.3125rem 0.3125rem 0.9375rem rgba(0, 0, 0, 0.5); /* Sombra */
 }
 
-.imagen-personaje h2 {
+
+.carrusel-personaje {
+    width: 20%; /* Tamaño del carrusel */
+    padding: 0.65rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carrusel-personaje .carousel-inner img {
+    width: 100%; /* Mantiene el ancho completo del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 400px; /* Máximo ancho */
+    max-height: 300px; /* Máximo alto */
+    box-shadow: 0.3125rem 0.3125rem 0.9375rem rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+.container.mt-5 {
+    margin-top: 0 !important; /* Ajusta el margen a tu necesidad */
+}
+
+.nav{
+    display: block;
+}
+
+h2 {
     background-color: rgb(2, 61, 2);
     color: white;
     width: 100%; /* Asegúrate de que ocupe todo el ancho */
@@ -210,3 +262,193 @@ footer {
     text-align: center;
 }
 
+
+@media (max-width: 576px){
+
+    #menu-celu{
+        background-color: #333;
+        text-align: end;
+        position: absolute; /* Hace que el menú se superponga al contenido */
+        right: 0;
+        z-index: 10; /* Asegura que el menú esté por encima de otros elementos */
+        width: 150px;
+    }
+
+    #menu-celu .dropdown-menu-celu, #menu-celu .dropdown-submenu-celu {
+        position: relative; /* Los submenús se despliegan hacia abajo */
+        display: none; /* Ocultos inicialmente */
+        margin-top: 5px; /* Espacio opcional entre submenús */
+        background-color: #f0f0f0; /* Color opcional para submenús */
+    }
+
+    #menu-celu li:hover > .dropdown-menu-celu, #menu-celu li:hover > .dropdown-submenu-celu {
+    display: block; /* Muestra el submenú cuando se hace hover */
+    }
+
+    #menu-celu .dropdown-menu-celu, #menu-celu .dropdown-submenu-celu {
+    position: relative; /* Despliegue hacia abajo */
+    display: none;
+    margin-top: 5px;
+    background-color: #f0f0f0;
+    }
+
+/* Ajuste para el último submenú para que se despliegue hacia la izquierda */
+    #menu-celu .dropdown-submenu-celu {
+    position: absolute; /* Posiciona el submenú dentro del contenedor */
+    top: 0;
+    left: auto; /* Desactiva cualquier valor de "left" */
+    right: 100%; /* Se despliega hacia la izquierda */
+    }
+
+
+    .menu{
+        display: none;
+    }
+    
+    .hamburger-menu {
+        display: block;
+        height: 40px;
+        width: 40px;
+        margin: 20px;
+        margin-bottom: 0;
+        background: linear-gradient(rgb(110, 108, 108), rgb(3, 56, 3));
+    }
+
+    .show {
+        display: block;
+    }
+
+
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .logo img {
+        width: 120px;
+        padding: 6%;
+    }
+
+    nav .menu {
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    nav ul li {
+        margin: 0;
+        width: 100%;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .imagen-personaje{
+        margin: 20px;
+        width: 90%;
+    }
+
+    .carrusel-personaje {
+        width: 80%; /* Tamaño del carrusel */
+        padding: 0.65rem;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .carrusel-personaje .carousel-inner img {
+        width: 100%; /* Mantiene el ancho completo del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        max-width: 400px; /* Máximo ancho */
+        max-height: 300px; /* Máximo alto */
+        box-shadow: 0.3125rem 0.3125rem 0.9375rem rgba(0, 0, 0, 0.5); /* Sombra */
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 480px){
+
+    #menu-celu{
+        background-color: #333;
+        text-align: end;
+        position: absolute; /* Hace que el menú se superponga al contenido */
+        right: 0;
+        z-index: 10; /* Asegura que el menú esté por encima de otros elementos */
+        width: 150px;
+    }
+
+    #menu-celu .dropdown-menu-celu, #menu-celu .dropdown-submenu-celu {
+        position: relative; /* Los submenús se despliegan hacia abajo */
+        display: none; /* Ocultos inicialmente */
+        margin-top: 5px; /* Espacio opcional entre submenús */
+        background-color: #f0f0f0; /* Color opcional para submenús */
+    }
+
+    #menu-celu li:hover > .dropdown-menu-celu, #menu-celu li:hover > .dropdown-submenu-celu {
+    display: block; /* Muestra el submenú cuando se hace hover */
+    }
+
+    #menu-celu .dropdown-menu-celu, #menu-celu .dropdown-submenu-celu {
+    position: relative; /* Despliegue hacia abajo */
+    display: none;
+    margin-top: 5px;
+    background-color: #f0f0f0;
+    }
+
+/* Ajuste para el último submenú para que se despliegue hacia la izquierda */
+    #menu-celu .dropdown-submenu-celu {
+    position: absolute; /* Posiciona el submenú dentro del contenedor */
+    top: 0;
+    left: auto; /* Desactiva cualquier valor de "left" */
+    right: 100%; /* Se despliega hacia la izquierda */
+    }
+
+
+    .menu{
+        display: none;
+    }
+    
+    .hamburger-menu {
+        display: block;
+        height: 40px;
+        width: 40px;
+        margin: 20px;
+        margin-bottom: 0;
+        background: linear-gradient(rgb(110, 108, 108), rgb(3, 56, 3));
+    }
+
+    .show {
+        display: block;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .logo img {
+        width: 120px;
+        padding: 6%;
+    }
+
+    .info-personaje p {
+        margin-right: 1.4rem; /* Espacio entre párrafos */
+    }
+    
+}

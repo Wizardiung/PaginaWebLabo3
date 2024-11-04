@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="https://static.wikia.nocookie.net/breakingbad/images/4/4a/Site-favicon.ico/revision/latest?cb=20210524140906" type="image/x-icon">
     <title>Gustavo Fring</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/personajes.css">
 </head>
+
+<script>
+    
+    function toggleMenu() {
+        const menu = document.getElementById("menu-celu");
+        menu.classList.toggle("show");
+    }
+
+</script>  
 
 <body>
     <header>
@@ -15,36 +26,69 @@
             <img src="imagenes/Breaking_Bad_logo.png" alt="Logo de Breaking Bad"> 
             </a>
         </div>
-        <nav>
-            <ul>
+        <nav class="nav" id="nav">
+            <button id="hamburger-button" class="hamburger-menu" onclick="toggleMenu()">☰</button>
+            <ul class="menu-celu" id="menu-celu">
+                <li class="dropdown-celu">
+                    <a href="#">Serie</a>
+                    <ul class="dropdown-menu-celu">
+                        <li><a href="historia.html">Historia</a></li>
+                        <li class="dropdown-celu">
+                            <a href="#">Personajes</a>
+                            <ul class="dropdown-submenu-celu">
+                                <li><a href="walter-white.html">Walter White</a></li>
+                                <li><a href="jesse-pinkman.html">Jesse Pinkman</a></li>
+                                <li><a href="mike-ehrmantraut.html">Mike Ehrmantraut</a></li>
+                                <li><a href="saul-goodman.html">Saul Goodman</a></li>
+                                <li><a href="gustavo-fring.html">Gustavo Fring</a></li>
+                                <li><a href="hank-schrader.html">Hank Schrader</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-celu">
+                            <a href="#">Temporadas</a>
+                            <ul class="dropdown-submenu-celu">
+                                <li><a href="temporada1.html">Temporada 1</a></li>
+                                <li><a href="temporada2.html">Temporada 2</a></li>
+                                <li><a href="temporada3.html">Temporada 3</a></li>
+                                <li><a href="temporada4.html">Temporada 4</a></li>
+                                <li><a href="temporada5.html">Temporada 5</a></li>
+                            </ul>
+                        </li>   
+                    </ul>                       
+                </li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="prensa.html">Prensa</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+            <ul class="menu">
                 <li class="dropdown">
                     <a href="#">Serie</a>
                     <ul class="dropdown-menu">
                         <li><a href="historia.html">Historia</a></li>
                         <li class="dropdown">
                             <a href="#">Personajes</a>
-                                <ul class="dropdown-submenu">
-                                    <li><a href="walter-white.html">Walter White</a></li>
-                                    <li><a href="jesse-pinkman.html">Jesse Pinkman</a></li>
-                                    <li><a href="mike-ehrmantraut.html">Mike Ehrmantraut</a></li>
-                                    <li><a href="saul-goodman.html">Saul Goodman</a></li>
-                                    <li><a href="hank-schrader.html">Hank Schrader</a></li>
-                                </ul>
+                            <ul class="dropdown-submenu">
+                                <li><a href="walter-white.html">Walter White</a></li>
+                                <li><a href="jesse-pinkman.html">Jesse Pinkman</a></li>
+                                <li><a href="mike-ehrmantraut.html">Mike Ehrmantraut</a></li>
+                                <li><a href="saul-goodman.html">Saul Goodman</a></li>
+                                <li><a href="gustavo-fring.html">Gustavo Fring</a></li>
+                                <li><a href="hank-schrader.html">Hank Schrader</a></li>
+                            </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#">Temporadas</a>
-                                <ul class="dropdown-submenu">
-                                    <li><a href="temporada1.html">Temporada 1</a></li>
-                                    <li><a href="temporada2.html">Temporada 2</a></li>
-                                    <li><a href="temporada3.html">Temporada 3</a></li>
-                                    <li><a href="temporada4.html">Temporada 4</a></li>
-                                    <li><a href="temporada5.html">Temporada 5</a></li>
-                                </ul>
+                            <ul class="dropdown-submenu">
+                                <li><a href="temporada1.html">Temporada 1</a></li>
+                                <li><a href="temporada2.html">Temporada 2</a></li>
+                                <li><a href="temporada3.html">Temporada 3</a></li>
+                                <li><a href="temporada4.html">Temporada 4</a></li>
+                                <li><a href="temporada5.html">Temporada 5</a></li>
+                            </ul>
                         </li>   
                     </ul>                       
                 </li>
-                
-                </li>    
                 <li><a href="multimedia.html">Multimedia</a></li>
                 <li><a href="prensa.html">Prensa</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -60,32 +104,65 @@
             </div>
             <div class="info-personaje">
                 <p>
-                    Gustavo "Gus" Fring era el líder criminal de un imperio de drogas y el dueño de la cadena de restaurantes Los Pollos Hermanos.
-                    Un magnate de negocios y filántropo nacido en Chile. Inicialmente estaba afiliado al Cártel de Juárez, 
-                    que utilizaba en secreto sus restaurantes como una tapadera legítima para la distribución de metanfetamina en todo el suroeste de Estados Unidos. 
-                    Al igual que Walter White, Gus era un criminal que se escondía "en plena vista,"
-                    recurriendo a su posición social como filántropo para ocultar su verdadera naturaleza según construía su imperio.
+                    Gustavo "Gus" Fring era el <strong>líder criminal</strong> de un <strong>imperio de drogas</strong> y el dueño de la cadena de restaurantes <strong>Los Pollos Hermanos</strong>.
+                    Un <strong>magnate de negocios</strong> y <strong>filántropo</strong> nacido en <strong>Chile</strong>. Inicialmente estaba afiliado al <strong>Cártel de Juárez</strong>,
+                    que utilizaba en secreto sus restaurantes como una <strong>tapadera legítima</strong> para la distribución de <strong>metanfetamina</strong> en todo el suroeste de Estados Unidos.
+                    Al igual que <strong>Walter White</strong>, Gus era un <strong>criminal</strong> que se escondía "en plena vista,"
+                    recurriendo a su posición social como filántropo para ocultar su <strong>verdadera naturaleza</strong> según construía su imperio.
                 </p>
                 <p>
-                    Walter entró en contacto con Gus cuando buscaba un comprador para su metanfetamina de alto nivel de pureza química. 
-                    Aunque Gus se mostró reacio a hacer negocios debido a sus observaciones de Jesse Pinkman como un drogadicto irresponsable,
-                     Walter logró convencerlo para que adquiriese la cantidad de producto que tenían. Viendo que el producto era bastante exitoso,
-                      Gus persuadió a Walter para que siguiese trabajando para él en su laboratorio. Aunque al principio ambos tenían una buena relación de negocios, 
-                      varios sucesos acaban causando su deterioro, llegando al punto en que ambos eran adversarios. 
-                      Por otra parte, su opinión sobre Jesse cambió favorablemente durante sus intentos de separarlo de Walter.
+                    Walter entró en contacto con Gus cuando buscaba un <strong>comprador</strong> para su metanfetamina de <strong>alto nivel de pureza química</strong>.
+                    Aunque Gus se mostró <strong>reacio</strong> a hacer negocios debido a sus observaciones de <strong>Jesse Pinkman</strong> como un <strong>drogadicto irresponsable</strong>,
+                    Walter logró convencerlo para que adquiriese la cantidad de <strong>producto</strong> que tenían. Viendo que el producto era bastante <strong>exitoso</strong>,
+                    Gus persuadió a Walter para que siguiese trabajando para él en su <strong>laboratorio</strong>. Aunque al principio ambos tenían una buena relación de negocios,
+                    varios sucesos acaban causando su <strong>deterioro</strong>, llegando al punto en que ambos eran <strong>adversarios</strong>.
+                    Por otra parte, su opinión sobre Jesse cambió favorablemente durante sus intentos de separarlo de Walter.
                 </p>
                 <p>
-                    Más allá de sus operaciones relacionadas con el narcotráfico, uno de los objetivos principales de Gus era su venganza ante el Cártel de Juárez y, 
-                    en particular, Hector Salamanca por haber matado a su antiguo compañero de negocios, Max Arciniega. 
-                    Tenía un odio tan desenfrenado que intervino para salvar la vida de Hector en más de una ocasión para poder seguir con sus planes de hacerlo sufrir. 
-                    Una de estas ocasiones lo llevó a conocer a Mike Ehrmantraut, quien empezó a trabajar para Gus y acabaría por convertirse en su hombre de mayor confianza.
+                    Más allá de sus operaciones relacionadas con el <strong>narcotráfico</strong>, uno de los objetivos principales de Gus era su <strong>venganza</strong> ante el Cártel de Juárez y,
+                    en particular, <strong>Hector Salamanca</strong> por haber matado a su antiguo compañero de negocios, <strong>Max Arciniega</strong>.
+                    Tenía un odio tan desenfrenado que intervino para salvar la vida de Hector en más de una ocasión para poder seguir con sus planes de hacerlo <strong>sufrir</strong>.
+                    Una de estas ocasiones lo llevó a conocer a <strong>Mike Ehrmantraut</strong>, quien empezó a trabajar para Gus y acabaría por convertirse en su <strong>hombre de mayor confianza</strong>.
                 </p>
+                
                 
 
             </div>
-            <div class="imagen-personaje">
-                <img src="imagenes/gus-fring.webp" alt="Imagen de Walter White">
-                <h2>Gustavo Fring</h2>
+            <div class="container mt-5 carrusel-personaje">
+                <div id="carruselSaul" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagenes/gus1.webp" class="d-block w-100" alt="Imagen de Gus 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                
+                            </div>
+                            <h2>Gustavo Fring</h2>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/gus2.webp" class="d-block w-100" alt="Imagen de Gus 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                
+                            </div>
+                            <h2>Gustavo Fring</h2>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/gus3.webp" class="d-block w-100" alt="Imagen de Gus 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                
+                            </div>
+                            <h2>Gustavo Fring</h2>
+                        </div>
+                        <!-- Agrega más imágenes según sea necesario -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carruselSaul" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carruselSaul" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
             </div>
         </div>
     </main>
@@ -94,10 +171,12 @@
     <footer>
         <p>&copy; 2024 Breaking Bad Fan Page</p>
         <div class="social-media">
-            <a href="#"><img src="imagenes/facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="imagenes/twitter-icon.png" alt="Twitter"></a>
-            <a href="#"><img src="imagenes/Instagram-Icon.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/BreakingBad/?locale=es_LA"><img src="imagenes/facebook-icon.png" alt="Facebook"></a>
+            <a href="https://x.com/breakingbad?lang=es"><img src="imagenes/twitter-icon.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/breakingbad/"><img src="imagenes/Instagram-Icon.png" alt="Instagram"></a>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
